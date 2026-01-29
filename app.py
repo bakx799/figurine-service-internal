@@ -160,6 +160,7 @@ def generate_figurine():
 
 
 @app.route('/health', methods=['GET'])
+@app.route('/healthz', methods=['GET'])
 def health():
     return jsonify({
         "status": "ok",
